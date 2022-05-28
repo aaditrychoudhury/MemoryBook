@@ -36,6 +36,7 @@ public class UserRecycler extends RecyclerView.Adapter<UserViewHolder> {
         holder.imageView.setImageBitmap(DataConverter.convertByteArray2Image(user.getImage()));
         holder.name.setText(user.getFullName());
         holder.dob.setText(String.valueOf(user.getDob()));
+        holder.desc.setText(String.valueOf(user.getDescription()));
 
     }
 

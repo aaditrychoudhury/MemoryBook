@@ -60,6 +60,7 @@ public class StoreActivity extends AppCompatActivity {
         uName=findViewById(R.id.userName);
         desc=findViewById(R.id.userDescription);
         dob=findViewById(R.id.userDob);
+
         saveUsers = (Button) this.findViewById(R.id.saveUsers);
         saveUsers.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -102,16 +103,19 @@ public class StoreActivity extends AppCompatActivity {
         });
 
     }
+
     private void showToast() {
         Toast.makeText(this,
                 "Insertion successful",
                 Toast.LENGTH_SHORT).show();
     }
+
     private void show() {
         Intent intent = new Intent(this,ShowUsersActivity.class);
         startActivity(intent);
 
     }
+
     @Override
     public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults)
     {
@@ -130,6 +134,7 @@ public class StoreActivity extends AppCompatActivity {
             }
         }
     }
+
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
@@ -141,4 +146,7 @@ public class StoreActivity extends AppCompatActivity {
             }
         }
     }
+
+
+
 }

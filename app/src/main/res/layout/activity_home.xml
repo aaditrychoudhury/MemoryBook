@@ -2,10 +2,11 @@
 <androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:context=".HomeActivity"
     android:id="@+id/drawer_layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#F4DDC8"
+    tools:context=".HomeActivity"
     tools:openDrawer="start">
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -16,8 +17,9 @@
             android:id="@+id/toolbar"
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"
-            android:background="#00BCD4"
+            android:background="#C86306"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:titleTextColor="#FFFF" />
@@ -30,7 +32,7 @@
             android:layout_marginTop="29dp"
             android:layout_marginRight="15dp"
             android:onClick="registerFace"
-            app:cardBackgroundColor="#FDDE82"
+            app:cardBackgroundColor="#FBC899"
             app:cardCornerRadius="20dp"
             app:cardElevation="8dp"
             app:layout_constraintEnd_toEndOf="parent"
@@ -51,8 +53,7 @@
                     android:fontFamily="@font/fredoka_one"
                     android:padding="10dp"
                     android:paddingTop="20dp"
-                    android:text="Recognize Face
-"
+                    android:text="Register Face"
                     android:textColor="#393636"
                     android:textColorHint="#FFFFFF"
                     android:textSize="28sp" />
@@ -63,7 +64,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="right"
                     android:alpha="0.8"
-                    android:background="#FDDE82"
+                    android:background="#FBC899"
                     android:scaleType="fitXY"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
@@ -71,7 +72,7 @@
                     app:layout_constraintTop_toTopOf="parent"
                     app:lottie_autoPlay="true"
                     app:lottie_loop="true"
-                    app:lottie_rawRes="@raw/facerecognition"
+                    app:lottie_rawRes="@raw/activelists"
                     app:lottie_speed="0.5" />
             </LinearLayout>
 
@@ -85,7 +86,7 @@
             android:layout_marginTop="29dp"
             android:layout_marginRight="15dp"
             android:onClick="detectFace"
-            app:cardBackgroundColor="#FDDE82"
+            app:cardBackgroundColor="#FBC899"
             app:cardCornerRadius="20dp"
             app:cardElevation="8dp"
             app:layout_constraintEnd_toEndOf="parent"
@@ -106,7 +107,7 @@
                     android:fontFamily="@font/fredoka_one"
                     android:padding="10dp"
                     android:paddingTop="20dp"
-                    android:text="Enroll Face"
+                    android:text="Recognise Face"
                     android:textColor="#393636"
                     android:textSize="28sp" />
 
@@ -116,7 +117,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="right"
                     android:alpha="0.8"
-                    android:background="#FDDE82"
+                    android:background="#FBC899"
                     android:scaleType="fitXY"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
@@ -124,28 +125,133 @@
                     app:layout_constraintTop_toTopOf="parent"
                     app:lottie_autoPlay="true"
                     app:lottie_loop="true"
-                    app:lottie_rawRes="@raw/activelists"
+                    app:lottie_rawRes="@raw/facerecognition"
+                    app:lottie_speed="1" />
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/showenrolleddata"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="29dp"
+            android:layout_marginRight="15dp"
+            android:onClick="showdata"
+            app:cardBackgroundColor="#FBC899"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ActiveLists">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/enrolleddata"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="31dp"
+                    android:backgroundTint="#FDDE82"
+                    android:fontFamily="@font/fredoka_one"
+                    android:padding="10dp"
+                    android:paddingTop="20dp"
+                    android:text="Stored Data"
+                    android:textColor="#393636"
+                    android:textSize="28sp" />
+
+                <com.airbnb.lottie.LottieAnimationView
+                    android:id="@+id/animation_view5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:alpha="0.8"
+                    android:background="#FBC899"
+                    android:scaleType="fitXY"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:lottie_autoPlay="true"
+                    app:lottie_loop="true"
+                    app:lottie_rawRes="@raw/storage"
+                    app:lottie_speed="1" />
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/reminders"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="29dp"
+            android:layout_marginRight="15dp"
+            android:onClick="remider"
+            app:cardBackgroundColor="#FBC899"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/showenrolleddata">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/remider"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="31dp"
+                    android:backgroundTint="#FDDE82"
+                    android:fontFamily="@font/fredoka_one"
+                    android:padding="10dp"
+                    android:paddingTop="20dp"
+                    android:text="Reminders"
+                    android:textColor="#393636"
+                    android:textSize="28sp" />
+
+                <com.airbnb.lottie.LottieAnimationView
+                    android:id="@+id/animation_view6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:alpha="0.8"
+                    android:background="#FBC899"
+                    android:scaleType="fitXY"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:lottie_autoPlay="true"
+                    app:lottie_loop="true"
+                    app:lottie_rawRes="@raw/reminder"
                     app:lottie_speed="1" />
             </LinearLayout>
 
         </androidx.cardview.widget.CardView>
 
 
-
-        <com.airbnb.lottie.LottieAnimationView
-            android:id="@+id/bottom_animation"
-            android:layout_width="wrap_content"
-            android:layout_height="200dp"
-            android:layout_gravity="bottom"
-            android:alpha="1"
-            android:scaleType="fitXY"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:lottie_autoPlay="true"
-            app:lottie_loop="true"
-            app:lottie_rawRes="@raw/bottom"
-            app:lottie_speed="2" />
+        <!--        <com.airbnb.lottie.LottieAnimationView-->
+        <!--            android:id="@+id/bottom_animation"-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="200dp"-->
+        <!--            android:layout_gravity="bottom"-->
+        <!--            android:alpha="1"-->
+        <!--            android:scaleType="fitXY"-->
+        <!--            app:layout_constraintBottom_toBottomOf="parent"-->
+        <!--            app:layout_constraintEnd_toEndOf="parent"-->
+        <!--            app:layout_constraintStart_toStartOf="parent"-->
+        <!--            app:lottie_autoPlay="true"-->
+        <!--            app:lottie_loop="true"-->
+        <!--            app:lottie_rawRes="@raw/bottom"-->
+        <!--            app:lottie_speed="2" />-->
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -157,7 +263,6 @@
         android:layout_gravity="start"
         app:headerLayout="@layout/nav_header_main"
         app:menu="@menu/main_menu" />
-
 
 
 </androidx.drawerlayout.widget.DrawerLayout>

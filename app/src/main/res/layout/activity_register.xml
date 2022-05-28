@@ -116,17 +116,17 @@
                             android:textSize="15sp" />
                     </com.google.android.material.textfield.TextInputLayout>
 
-<!--                    <br.com.simplepass.loading_button_lib.customViews.CircularProgressButton-->
-<!--                        android:id="@+id/cirRegisterButton"-->
-<!--                        style="@style/loginButton"-->
-<!--                        android:layout_gravity="center_horizontal"-->
-<!--                        android:layout_marginTop="@dimen/loginViewsMargin"-->
-<!--                        android:background="@drawable/range_button_background"-->
-<!--                        android:text="Register"-->
-<!--                        app:initialCornerAngle="27dp"-->
-<!--                        app:spinning_bar_color="#FFF"-->
-<!--                        app:spinning_bar_padding="6dp"-->
-<!--                        app:spinning_bar_width="4dp" />-->
+                    <!--                    <br.com.simplepass.loading_button_lib.customViews.CircularProgressButton-->
+                    <!--                        android:id="@+id/cirRegisterButton"-->
+                    <!--                        style="@style/loginButton"-->
+                    <!--                        android:layout_gravity="center_horizontal"-->
+                    <!--                        android:layout_marginTop="@dimen/loginViewsMargin"-->
+                    <!--                        android:background="@drawable/range_button_background"-->
+                    <!--                        android:text="Register"-->
+                    <!--                        app:initialCornerAngle="27dp"-->
+                    <!--                        app:spinning_bar_color="#FFF"-->
+                    <!--                        app:spinning_bar_padding="6dp"-->
+                    <!--                        app:spinning_bar_width="4dp" />-->
                     <br.com.simplepass.loading_button_lib.customViews.CircularProgressButton
                         android:id="@+id/cirRegisterButton"
                         style="@style/loginButton"
@@ -138,6 +138,7 @@
                         app:spinning_bar_color="#FFF"
                         app:spinning_bar_padding="6dp"
                         app:spinning_bar_width="4dp" />
+
                     <TextView
                         android:id="@+id/loginText"
                         style="@style/parent"

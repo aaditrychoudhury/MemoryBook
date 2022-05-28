@@ -11,6 +11,8 @@ import android.content.res.Configuration;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
+import android.view.Window;
+import android.view.WindowManager;
 import android.widget.Toast;
 
 import com.google.android.material.navigation.NavigationView;
@@ -23,10 +25,12 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
     private DrawerLayout drawerLayout;
     private ActionBarDrawerToggle toggle;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
+
 //
 //        FirebaseAuth firebaseAuth = FirebaseAuth.getInstance();
 //        FirebaseUser currentUser = firebaseAuth.getCurrentUser();
@@ -98,6 +102,11 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
     }
     public void detectFace(View view){
         startActivity(new Intent(this,DetectorActivity.class));
+    } public void showdata(View view){
+        startActivity(new Intent(this,ShowUsersActivity.class));
+    }
+    public void remider(View view){
+        startActivity(new Intent(this,ReminderActivity.class));
     }
 
 }

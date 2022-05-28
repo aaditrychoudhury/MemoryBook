@@ -20,6 +20,9 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme.ObjectDetection">
         <activity
+            android:name=".ReminderActivity"
+            android:exported="false" />
+        <activity
             android:name=".ShowUsersActivity"
             android:exported="false" />
         <activity

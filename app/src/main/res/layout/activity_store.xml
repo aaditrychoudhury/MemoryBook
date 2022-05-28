@@ -4,54 +4,81 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".StoreActivity"
+    android:background="#F4DDC8"
     android:gravity="center"
-    android:orientation="vertical">
-    <Button
-        android:id="@+id/takePicture"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Take Picture"/>
+    android:orientation="vertical"
+    tools:context=".StoreActivity">
 
+    <!--        android:onClick="takePicture"/>-->
+
+    <br.com.simplepass.loading_button_lib.customViews.CircularProgressButton
+        android:id="@+id/takePicture"
+        style="@style/loginButton"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/loginViewsMargin"
+        android:background="@drawable/range_button_background"
+        android:text="Take Picture"
+        app:initialCornerAngle="27dp"
+        app:spinning_bar_color="#FFF"
+        app:spinning_bar_padding="6dp"
+        app:spinning_bar_width="4dp" />
 
     <ImageView
         android:id="@+id/userImage"
         android:layout_width="250dp"
-        android:layout_height="250dp"/>
+        android:layout_height="250dp" />
+
     <EditText
         android:id="@+id/fullName"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="5dp"
-        android:hint="Give Full Name"/>
+        android:hint="Give Full Name" />
+
     <EditText
         android:id="@+id/userName"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="5dp"
-        android:hint="User Name"/>
+        android:hint="User Name" />
 
     <EditText
         android:id="@+id/userDescription"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="5dp"
-        android:hint="Description"/>
+        android:hint="Description" />
+
     <EditText
+        android:id="@+id/userDob"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/userDob"
         android:layout_margin="5dp"
-        android:hint="mm/dd/yyyy"/>
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Save"
-        android:id="@+id/saveUsers"/>
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:hint="mm/dd/yyyy" />
+
+    <br.com.simplepass.loading_button_lib.customViews.CircularProgressButton
+        android:id="@+id/saveUsers"
+        style="@style/loginButton"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/loginViewsMargin"
+        android:background="@drawable/range_button_background"
+        android:text="Save Users"
+        app:initialCornerAngle="27dp"
+        app:spinning_bar_color="#FFF"
+        app:spinning_bar_padding="6dp"
+        app:spinning_bar_width="4dp" />
+
+    <br.com.simplepass.loading_button_lib.customViews.CircularProgressButton
+        android:id="@+id/showUsers"
+        style="@style/loginButton"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/loginViewsMargin"
+        android:background="@drawable/range_button_background"
         android:text="Show Users"
-        android:id="@+id/showUsers"/>
+        app:initialCornerAngle="27dp"
+        app:spinning_bar_color="#FFF"
+        app:spinning_bar_padding="6dp"
+        app:spinning_bar_width="4dp" />
+
 
 </LinearLayout>

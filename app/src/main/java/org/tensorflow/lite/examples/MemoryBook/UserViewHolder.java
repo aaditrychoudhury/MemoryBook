@@ -10,7 +10,7 @@ import androidx.recyclerview.widget.RecyclerView;
 public class UserViewHolder extends RecyclerView.ViewHolder {
 
     ImageView imageView;
-    TextView name, dob;
+    TextView name, dob,desc;
 
 
     public UserViewHolder(@NonNull View itemView) {
@@ -18,6 +18,7 @@ public class UserViewHolder extends RecyclerView.ViewHolder {
         name = itemView.findViewById(R.id.cardName);
         dob = itemView.findViewById(R.id.cardDob);
         imageView = itemView.findViewById(R.id.cardImage);
+        desc = itemView.findViewById(R.id.cardDesc);
 
     }
 }

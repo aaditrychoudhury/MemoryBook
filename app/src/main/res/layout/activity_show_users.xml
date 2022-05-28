@@ -2,11 +2,11 @@
 <androidx.recyclerview.widget.RecyclerView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/userRecyclerView"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ShowUsersActivity"
-    android:id="@+id/userRecyclerView">
-
+    android:background="#F4DDC8"
+    tools:context=".ShowUsersActivity">
 
 
 </androidx.recyclerview.widget.RecyclerView>
