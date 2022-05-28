@@ -20,15 +20,21 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme.ObjectDetection">
         <activity
-            android:name="org.tensorflow.lite.examples.MemoryBook.HomeActivity"
+            android:name=".ShowUsersActivity"
             android:exported="false" />
         <activity
-            android:name="org.tensorflow.lite.examples.MemoryBook.RegisterActivity"
+            android:name=".StoreActivity"
             android:exported="false" />
         <activity
-            android:name="org.tensorflow.lite.examples.MemoryBook.LoginActivity"
+            android:name=".HomeActivity"
             android:exported="false" />
-        <activity android:name="org.tensorflow.lite.examples.MemoryBook.splashActivity">
+        <activity
+            android:name=".RegisterActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LoginActivity"
+            android:exported="false" />
+        <activity android:name=".splashActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -36,7 +42,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="org.tensorflow.lite.examples.MemoryBook.DetectorActivity"
+            android:name=".DetectorActivity"
             android:label="@string/tfe_od_app_name"
             android:screenOrientation="portrait">
 

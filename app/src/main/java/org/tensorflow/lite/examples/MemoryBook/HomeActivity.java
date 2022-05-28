@@ -94,7 +94,7 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
         return true;
     }
     public void registerFace(View view){
-        startActivity(new Intent(this,DetectorActivity.class));
+        startActivity(new Intent(this,StoreActivity.class));
     }
     public void detectFace(View view){
         startActivity(new Intent(this,DetectorActivity.class));
