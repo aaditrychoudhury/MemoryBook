@@ -115,10 +115,9 @@ An App to Remember Everything U need.
 
 ## Useful Links
 
-- [Apk](https://MemoryBook-apurva.herokuapp.com/landing)
-- [Demo Video](https://youtu.be/OKKK1GOnlIU)
-- [Sprint Document](https://docs.google.com/presentation/d/11k8pLJPEV-XJwxIX4ysW9fKmHqFEZHcUWizFcFyVsns/edit?usp=sharing)
-- [Design Document](https://docs.google.com/document/d/1IJcEbbhsbQna-tgcnfV_9_RhXQi4SURlrl3-0HypArE/edit?usp=sharing)
+- [Demo Video](https://youtu.be/LsbhoawAZOU)
+- [Document](https://www.canva.com/design/DAFCFQnAJWw/ZUQw1ukcdcLGJ05qZ-H3Bg/view?utm_content=DAFCFQnAJWw&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
+- [Design Document](https://docs.google.com/document/d/1YSLyGvn87_cATycrD9la8HAzBLB3F42fuBuF05jAJ_s/edit?usp=sharing)
 
 ## Need help?
 
