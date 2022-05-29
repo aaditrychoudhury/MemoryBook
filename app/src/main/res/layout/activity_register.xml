@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_gravity="center"
-    android:background="#FF8210"
+    android:background="#F4B377"
     android:focusableInTouchMode="true"
     android:gravity="center"
     tools:context=".RegisterActivity">
@@ -18,9 +18,9 @@
         android:layout_centerInParent="true"
         android:layout_marginTop="5dp"
         android:layout_marginEnd="0dp"
-        android:progressBackgroundTint="#00BCD4"
+        android:progressBackgroundTint="#FF8210"
         android:visibility="invisible"
-        app:indicatorColor="#00BCD4" />
+        app:indicatorColor="#FF8210" />
 
     <ScrollView
         android:layout_width="match_parent"
