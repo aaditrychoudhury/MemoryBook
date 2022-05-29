@@ -34,7 +34,7 @@
                 android:gravity="center"
                 android:text="MEMORYBOOK"
                 android:textColor="#FF8210"
-                android:textSize="50sp" />
+                android:textSize="30sp" />
 
             <ProgressBar
                 android:id="@+id/loginProgressBar"
@@ -48,18 +48,26 @@
                 android:visibility="invisible"
                 app:indicatorColor="#00BCD4" />
 
-<!--            <RelativeLayout-->
-<!--                android:layout_width="match_parent"-->
-<!--                android:layout_height="200dp">-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="200dp">
 
-<!--                <ImageView-->
-<!--                    android:layout_width="match_parent"-->
-<!--                    android:layout_height="match_parent"-->
-<!--                    android:layout_alignParentRight="true"-->
-<!--                    android:layout_marginRight="0dp"-->
-<!--                    android:src="@drawable/memory" />-->
+                <TextView
+                    style="@style/viewParent.headerText.NoMode"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:text="Already \nhave an \nAccount?" />
 
-<!--            </RelativeLayout>-->
+                <ImageView
+                    android:layout_width="437dp"
+                    android:layout_height="181dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginRight="-131dp"
+                    android:src="@drawable/memory" />
+
+            </RelativeLayout>
 
 
 
@@ -68,25 +76,14 @@
                 style="@style/parent"
                 android:layout_marginTop="@dimen/loginViewsMargin">
 
-                <TextView
-                    style="@style/viewParent.headerText.NoMode"
-                    android:layout_alignParentLeft="true"
-                    android:layout_centerVertical="true"
-                    android:layout_marginBottom="30dp"
-                    android:fontFamily="@font/fredoka_one"
-                    android:text="Welcome Back!"
-                    android:textColor="#F87F59"
-                    android:textSize="30sp" />
-
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/editTextEmail"
+                    style="@style/modifiedEditText"
+                    android:hint="@string/login_email_hint"
+                    android:inputType="textEmailAddress"
+                    android:maxLines="1"
+                    android:textSize="18sp" />
             </com.google.android.material.textfield.TextInputLayout>
-
-            <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/editTextEmail"
-                style="@style/modifiedEditText"
-                android:hint="@string/login_email_hint"
-                android:inputType="textEmailAddress"
-                android:maxLines="1"
-                android:textSize="18sp" />
 
             <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/textInputPassword"
