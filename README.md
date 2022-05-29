@@ -20,6 +20,12 @@ An App to Remember Everything U need.
 </p>
 
 [![Generic badge](https://img.shields.io/badge/view-demo-blue?style=for-the-badge&label=View%20Demo%20Video)](https://youtu.be/OKKK1GOnlIU) 
+## UML Diagrams
+![image](https://user-images.githubusercontent.com/76275812/170863025-0edb496f-fa23-4d69-a708-9d2d280c3f0b.png)
+
+## Block Diagram
+![image](https://user-images.githubusercontent.com/76275812/170863328-80ed0271-9ffc-45f6-8c6b-815156ffbefc.png)
+
 
 ## Features and Interfaces
 
