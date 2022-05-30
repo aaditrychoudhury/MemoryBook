@@ -109,7 +109,9 @@ An App to Remember Everything U need.
 3. Give All necessary permissions whenever asked. 
 4. Create an Account
 5. Login Through That Account 
-5. Hurray!!!!! You are good to go with 'Memory Book'
+6. Hurray!!!!! You are good to go with 'Memory Book'
+
+## Note: If APK is not getting installed in your smart phone then Git clone the Project in your Android Studio and run it or incase of any diffuculties contact me on aaditrychoudhury@gmail.com
 
 
 
