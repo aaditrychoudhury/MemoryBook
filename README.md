@@ -19,7 +19,7 @@ An App to Remember Everything U need.
 </a>
 </p>
 
-[![Generic badge](https://img.shields.io/badge/view-demo-blue?style=for-the-badge&label=View%20Demo%20Video)](https://youtu.be/OKKK1GOnlIU) 
+[![Generic badge](https://img.shields.io/badge/view-demo-blue?style=for-the-badge&label=View%20Demo%20Video)](https://www.youtube.com/watch?v=LsbhoawAZOU) 
 ## UML Diagrams
 ![image](https://user-images.githubusercontent.com/76275812/170863025-0edb496f-fa23-4d69-a708-9d2d280c3f0b.png)
 
